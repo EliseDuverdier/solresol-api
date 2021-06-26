@@ -1,0 +1,14 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+
+#ligatures
+feature liga {
+	sub D D by d;
+	sub R R by r;
+	sub M M by m;
+	sub F F by f;
+	sub S S by s;
+	sub L L by l;
+	sub T T by t;
+} liga;
+

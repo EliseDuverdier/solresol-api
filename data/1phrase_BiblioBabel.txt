@@ -1,0 +1,26 @@
+la bibliotheque de babel
+
+bibliotheque		LLRL
+Babel (langage country)	SRS TFRM
+—
+universe		DMD
+(other			DT
+name			RTSR
+library)		LLRL
+is construct		RRDR
+of			LT
+inknown (know:SLTR)	RTLS
+number			LFDR
+or			M
+without end		SL
+of			LT
+hexagonal (5 built)	RLL RRDR
+pass / way		RFR FTSF
+with			FR
+at middle		F TDTD
+much			FT
+air transport		TDD FTRF
+next to			
+down			TLS
+open house		DSDS RMFL
+.

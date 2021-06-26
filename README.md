@@ -1,21 +1,28 @@
 # solresol-api
 
-**Solresol** was a constructed language invented in 1827 by Jean Francois Sudre,
+**Solresol** was a constructed language invented in 1827 by Jean Francois Sudre
 
-It can represent words by a set of colors, notes, drawing, or letters.
+It can represent words by a set of colors, notes, drawings, or letters. 
 
-### how to use
 
-*Routes*
+### example: “The Library of Babel”
 
-```
-/en/srs/{word}
-/srs/en/{word}
-```
+<img src="data/images/s_babel.png" alt="The Library of Babel, from Borges">
 
-### architecture
+## how to use
 
-# The api uses a simple ADR pattern to return data contained in a mongodb base
+| Route | |
+|-|-|
+| `/en/srs/{word}` | translates from English to SolReSol|
+| `/srs/en/{word}` | translate SolReSol letters to English |
 
-### todo
+
+## architecture
+
+<!-- todo -->
+
+## references
+
+* see [data folder](data/)
+* https://en.wikipedia.org/wiki/Solresol
 
