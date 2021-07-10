@@ -5,13 +5,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var translateRouter = require('./routes/translate');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -19,8 +19,12 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/translate', translateRouter);
+
+
+app.locals.basedir = path.join(__dirname, 'views');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -39,3 +43,15 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+// Constants
+// const PORT = 81;
+// const HOST = '0.0.0.0';
+
+// // App
+// const app = express();
+// app.get('/', (req, res) => {
+//   res.send('Hello World');
+// });
+
+// app.listen(PORT, HOST);
