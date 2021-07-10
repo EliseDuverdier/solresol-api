@@ -7,7 +7,7 @@ It can represent words by a set of colors, notes, drawings, or letters.
 
 ### example: “The Library of Babel”
 
-<img src="data/images/s_babel.png" alt="The Library of Babel, from Borges">
+<img src="_data/images/s_babel.png" alt="The Library of Babel, from Borges">
 
 ## how to use
 
@@ -16,6 +16,12 @@ It can represent words by a set of colors, notes, drawings, or letters.
 | `/en/srs/{word}` | translates from English to SolReSol|
 | `/srs/en/{word}` | translate SolReSol letters to English |
 
+## run locally
+```
+docker build . -t <your username>/node-web-app
+docker run -p 49160:8080 -d <your username>/node-web-app
+
+```
 
 ## architecture
 
@@ -23,6 +29,6 @@ It can represent words by a set of colors, notes, drawings, or letters.
 
 ## references
 
-* see [data folder](data/)
+* see the [`_data/` folder](data/)
 * https://en.wikipedia.org/wiki/Solresol
 
