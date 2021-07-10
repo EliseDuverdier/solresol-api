@@ -1,6 +1,8 @@
 extends /layout
 
 block content
-  h1 Translate here
-  p input your word and submit 
-  input(type="text", name="word")
+    h1 Translate here
+    p input your word and submit
+    form(action='translate/en-srs', method='get')
+        input(type='text', name='word')
+        button(type='submit') translate

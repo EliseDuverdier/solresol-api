@@ -3,5 +3,16 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='icon' type='image/png' href='/images/favicon.png')
   body
+    header
+        img(src='/images/s_thumb.png' alt='SolReSol')
+        div
+            h1
+                a(href='/') SolReSol
+            p Welcome to the SolReSol encyclopedia
+        div
+            a(href='/translate') translate some words
+
+    hr
     block content
